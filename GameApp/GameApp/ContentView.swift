@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SpriteKit
 
 struct ContentView: View {
     var body: some View {
@@ -13,7 +14,11 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button {
+            } label: {
+              Text("Record a Dream")
+            }
+            .buttonStyle(.bordered)
         }
         .padding()
     }
